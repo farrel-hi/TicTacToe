@@ -1,0 +1,113 @@
+/* Reduce Indent Shortcut: CTRL + [ */
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(235, 18, 4), rgb(75, 145, 232));  
+}
+
+p{
+    color:black;
+}
+
+#container{
+    background-image: linear-gradient(to right, rgb(235, 18, 4), rgb(75, 145, 232));  
+    z-index: -2;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title-container{
+    position: relative;
+    display: flex;
+    padding: 50px 0 80px 0;
+}
+
+.title-img{
+    height: 150px;
+    transform: rotate(-5deg);
+}
+
+.brush{
+    position: absolute;
+    top:-20px;
+    left: -160px;
+    z-index: -1;
+    height: 300px;
+    transform: rotate(-5deg);
+}
+
+#game-container{
+    width: 50%;
+    height: 50%;
+
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+#cross {
+    background: red;
+    height: 100px;
+    position: relative;
+    width: 20px;
+  }
+
+#cross:after {
+    background: red;
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+}
+
+#scoreboard{
+    position:absolute;
+    z-index: -1;
+    width: 85%;
+    top:35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score-img{
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+.score-point{
+    font-size: 150px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#status{
+    padding:20px 0 20px 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#restart{
+    height: 50px;
+    width: 200px;
+
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
