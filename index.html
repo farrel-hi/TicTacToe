@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- <p>Tic Tac Toe Game</p>
+        <p>by Farrel Haridhi Indallah</p> -->
+
+        <div id="title-container">         
+            <img src="img/tic-tac-toe-game-2.png" alt="tic-tac-toe-game" class="title-img">
+            <img src="img/brush2.png" alt="brush" class="brush">
+        </div>        
+
+    
+        <div id="game-container">
+            <button class="block" id="block0" onclick="gameStart(0)"></button>
+            <button class="block" id="block1" onclick="gameStart(1)"></button>
+            <button class="block" id="block2" onclick="gameStart(2)"></button>
+            <button class="block" id="block3" onclick="gameStart(3)"></button>
+            <button class="block" id="block4" onclick="gameStart(4)"></button>
+            <button class="block" id="block5" onclick="gameStart(5)"></button>
+            <button class="block" id="block6" onclick="gameStart(6)"></button>
+            <button class="block" id="block7" onclick="gameStart(7)"></button>
+            <button class="block" id="block8" onclick="gameStart(8)"></button>
+        </div>
+
+        <p id="status">X Turn</p>
+
+        <button id="restart" onclick="restartGame()">RESTART</button>
+
+        <!-- <p>Scoreboard</p> -->
+        <div id="scoreboard">
+            <div class="score-container">
+                <img src="img/o.png" alt="O" class="score-img">
+                <p id="o-score" class="score-point">0</p>
+            </div>
+            <div class="score-container">
+                <img src="img/x.png" alt="X" class="score-img">
+                <p id="x-score" class="score-point">0</p>
+                
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
